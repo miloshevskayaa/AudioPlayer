@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon/favicon-32x32.png" >
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,200&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <title>Audio player</title>
+    <link rel="stylesheet" href="./audio.css">
+    <script src = "audio.js" defer></script>
+</head>
+<body>
+    <div class = "wrapper">
+        <div class = "player">
+            <div><img class = "background" src="./assets/images/Faded.jpg" id = background></div>
+            <div class = "nowplaying">Now playing</div>
+            <div class= "imagearound"><img class = "image" src="./assets/images/Faded.jpg" alt="faded" width = 280px height = 280px></div>
+
+            <div class = "title">Faded</div>
+            <div class = "author">Crypto, Constance</div>
+
+
+            <audio class = "audio" src="https://now.morsmusic.org/load/1625520422/Crypto_Constance_-_Faded_(musmore.com).mp3" ></audio>
+            
+
+            <div class="progresscontainer">
+                <div class="progress"></div>
+                <div class="timer">
+                    <span class="current">0:20</span>
+                    <span class="duration">2:20</span>
+                </div>
+            </div> 
+
+            <div class="buttons">
+  
+                <div class="btn prev"> <img src="./assets/images/previous.png" alt="btn" width = 48px height = 48px></div> 
+                <div class="btn play"> <img class="changeplay" src="./assets/images/play.png" alt="btn" width = 48px height = 48px> </div>
+                <div class="btn next"> <img src="./assets/images/next.png" alt="btn" width = 48px height = 48px> </div>
+            </div>
+
+            <div class = "volume">
+                <div class="btnSound" id="volumeIcon"></div> 
+                <div class = "slidercontainer">
+                    <span class="bar"><span class="fill"></span></span>
+                    <input class ="slider" type="range" id="volume" min = "0" max="100" value="50">
+                </div>
+
+                <p id="showvolume">50</p>
+            </div>
+
+        </div>
+        <!-- <audio src="https://s1.muzati.net/files/mp3/miyagi_-_burevestnik_(feat._andy_panda)_muzati.net_128.mp3" controls></audio>
+    
+        <audio src="https://music2019.su/uploads/files/2021-12/anass-marbouh-show_100352347.mp3" controls></audio> -->
+
+
+    </div>
+</body>
+</html>
